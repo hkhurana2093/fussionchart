@@ -1,0 +1,33 @@
+{
+    "locations": [
+
+       {
+    "title": "chandigarh",
+    "latitude": 30.7194022,
+    "longitude": 76.76147460937501
+},
+{
+    "title": "mohali",
+    "latitude": 30.704649,
+    "longitude": 76.717873
+},
+{
+    "title": "delhi",
+    "latitude": 28.6141793,
+    "longitude": 77.2022662
+},
+{
+    "title": "dehradun",
+    "latitude": 30.3255646,
+    "longitude": 78.0436813
+},
+{
+    "title": "Patiala",
+    "latitude": 30.340000,
+    "longitude": 76.379997
+}
+ ]
+}
+
+
+

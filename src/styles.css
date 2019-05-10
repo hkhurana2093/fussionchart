@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+.chart-custom {
+    display: block;
+    width: 800px !important;
+    height: 800px !important;
+    font-display:white
+
+   
+  }
+  
+
+  agm-map {
+    height: 300px;
+  }

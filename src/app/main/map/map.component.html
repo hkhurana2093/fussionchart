@@ -1,0 +1,32 @@
+<p>
+  map works!
+</p>
+
+
+<h1>{{ title }}</h1>
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+
+<agm-map [fitBounds]="true"  [zoom]="10" [latitude]="30.73331" [longitude]="76.779419" >
+  <ng-container *ngFor="let place of places">
+    <agm-marker [iconUrl]="icon"  (markerClick)="openModal(template)" [latitude]="place.latitude"  [longitude]="place.longitude" [label]="place.title" [agmFitBounds]="true" >
+      
+    </agm-marker>
+  </ng-container>
+</agm-map>
+
+
+<button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+ 
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    This is a modal.
+  </div>
+</ng-template>

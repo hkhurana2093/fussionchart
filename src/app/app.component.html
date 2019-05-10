@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to demo Page
+  </h1>
+  
+  <div class="collapse navbar-collapse show" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="nav navbar-nav menu_nav offset">  
+    <li class="nav-item active"><a class="nav-link" routerLink="/graph" routerLinkActive="active">graph</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/metabase">metabase</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/map"  >map</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/secondmap"  >secondmap</a></li>
+    </ul>
+  </div>
+  
+<router-outlet></router-outlet>
+  
+  
